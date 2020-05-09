@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { SkinService } from './core/services';
+import { IsNullOrUndefined } from './core';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +18,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    debugger;
     this.ThemeList = this.skinService.GetAvailableSkins();
-    this.SelectedSkin = this.skinService.SkinStoreInstance.GetSelected();
+    this.SelectedSkin = this.skinService.GetSelectedSkin();
     this.ChangeTheme(this.SelectedSkin);
   }
 

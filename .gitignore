@@ -1,2 +1,4 @@
 /WebSiteSrc/BackServer/bin
 /WebSiteSrc/BackServer/obj
+/WebSiteSrc/Front/package-lock.json
+/WebSiteSrc/.vs/WebSiteSrc/v16/.suo

@@ -31,20 +31,19 @@
             "styles": [
               {
                 "input": "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                "bundleName": "bootstrap",
+                "bundleName": "bootstrap-css",
                 "inject": true,
-                "lazy": true
+                "lazy": false
               },
               {
                 "input": "src/styles/styles.scss",
                 "bundleName": "default-style",
-                "inject": true,
                 "lazy": true
               },
               {
                 "input": "src/styles/black-style.scss",
                 "bundleName": "black-style",
-                "inject": false
+                "lazy": true
               }
             ],
             "scripts": [
